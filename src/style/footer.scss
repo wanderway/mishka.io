@@ -1,0 +1,157 @@
+.footer {
+  height: 140px;
+
+  background: #f1f1f1;
+
+  padding: 53px 50px 0 50px;
+
+  &__logo {
+
+    width: calc(100% / 3);
+    float: left;
+  }
+
+  &__logo-sprite {
+    display: block;
+    height: 34px;
+    width: 102px;
+    background: url("../img/footer-logo-sprite.png") no-repeat -10px -64px;
+
+    transition: .5s;
+
+    &:hover {
+      background: url("../img/footer-logo-sprite.png") no-repeat -10px -10px;
+
+      transition: .6s;
+
+    }
+  }
+
+  &__social {
+    width: calc(100% / 3);
+    float: left;
+
+    text-align: center;
+  }
+
+  &__social-button {
+    display: inline-block;
+    width: 30px;
+    height: 29px;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__instagram {
+    background: url("../img/css_sprites.png") -49px -45px;
+
+    transition: .5s;
+
+    &:hover {
+      background-position: -7px -45px;
+
+      transition: .6s;
+    }
+  }
+
+  &__facebook {
+    background: url("../img/css_sprites.png") -125px -10px;
+
+    transition: .5s;
+
+    &:hover {
+      background-position: -86px -10px;
+
+      transition: .6s;
+    }
+  }
+
+  &__twitter {
+    background: url("../img/css_sprites.png") -49px -5px;
+
+    transition: .5s;
+
+    &:hover {
+      background-position: -5px -5px;
+
+      transition: .6s;
+    }
+  }
+
+  &__copyright {
+    width: calc(100% / 3);
+    float: right;
+    padding-top: 7px;
+
+    text-align: right;
+  }
+
+
+  &__academy-link {
+    position: relative;
+
+    display: inline-block;
+    padding-right: 40px;
+
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 16px;
+    text-align: right;
+    font-weight: bold;
+    text-decoration: none;
+
+    color: #000000;
+
+    transition: .5s;
+
+
+    &:hover {
+      color: #63d1bb;
+      transition: .6s;
+    }
+
+    &:after {
+      position: absolute;
+      top: -7px;
+      left: 130px;
+
+      width: 27px;
+      height: 34px;
+
+      background: url("../img/sprites-index-page.png") no-repeat -5px -226px;
+      content: "";
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer {
+    height: 160px;
+    padding: 0;
+
+    &__logo {
+      display: none;
+    }
+
+    &__social {
+      float: none;
+      width: 100%;
+      height: 80px;
+      padding-top: 25.5px;
+
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    &__copyright {
+      float: none;
+      width: 100%;
+      height: 80px;
+      padding-top: 32px;
+
+      text-align: center;
+    }
+
+  }
+
+}

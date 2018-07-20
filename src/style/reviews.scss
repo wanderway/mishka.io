@@ -1,0 +1,187 @@
+.reviews {
+  position: relative;
+  padding: 70px 50px 0;
+  height: 530px;
+
+  background: #ffffff url("../img/review.png") no-repeat 50px top;
+
+  &__wrapper {
+    position: relative;
+    margin-left: 175px;
+  }
+
+  &__title {
+    margin: 0;
+    width: 78%;
+    float: left;
+
+    text-align: left;
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  &__feedback {
+    float: left;
+    margin: 55px 0 0 0;
+    width: 78%;
+  }
+
+  &__text {
+    margin: 0 0 30px 0;
+
+    font-family: "MyriadPro_regular", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  &__author {
+    display: block;
+    width: 40%;
+
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__account {
+    display: block;
+    margin-top: 10px;
+    font-family: "MyriadPro_regular", "Arial", sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-decoration: none;
+  }
+
+  &__toggle {
+    position: absolute;
+    bottom: 10px;
+    right: 110px;
+
+    height: 26px;
+    width: 50px;
+    padding: 0;
+
+    text-indent: -10000px;
+    border: none;
+
+    background: url("../img/huge-arrow-left.png") no-repeat;
+
+    transition: .5s;
+
+    cursor: pointer ;
+
+
+    &:hover {
+      background: #ececec url("../img/huge-arrow-left.png") no-repeat;
+      border-radius: 10px;
+
+      transition: .6s;
+    }
+  }
+
+  &__toggle--prev {
+    right: 30px;
+
+    background: url("../img/huge-arrow-right.png") no-repeat;
+
+
+    &:hover {
+      background: #ececec url("../img/huge-arrow-right.png") no-repeat;
+      border-radius: 9px;
+
+      transition: .6s;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 22%;
+  }
+
+  &__geometry {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 23px;
+
+    background: url("../img/geometry2.png") center center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .reviews {
+    padding: 50px 0 0 0;
+
+    background: #ffffff url("../img/review.png") no-repeat left top;
+
+    &__wrapper {
+      margin-left: 50px;
+    }
+
+    &__feedback {
+      width: 100%;
+    }
+
+    &__toggle {
+      right: 150px;
+    }
+
+    &__toggle--prev {
+      right: 70px;
+    }
+
+    .btn {
+      right: 50px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .reviews {
+    height: 600px;
+
+    padding: 10px 30px 0;
+
+    background-image: none;
+
+    &__title {
+      font-size: 24px;
+
+    }
+
+    &__wrapper {
+      margin: 0;
+    }
+
+    &__feedback {
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    &__author {
+      font-size: 14px;
+      width: 100%;
+    }
+
+    &__toggle {
+      bottom: -65px;
+      left: 30%;
+    }
+
+    &__toggle--prev {
+      left: 60%;
+    }
+
+    &__btn {
+      bottom: -150px;
+      width: 100%;
+    }
+  }
+
+
+}

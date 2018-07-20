@@ -1,0 +1,441 @@
+.main-navigation {
+  height: 180px;
+
+  background: #ffffff;
+
+  &__items {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    height: 90px;
+    padding-left: 35px;
+    float: left;
+
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    border-right: 1px solid #ececec;
+    color: #000000;
+
+
+    &:nth-child(1) {
+      width: 21%;
+      padding-left: 50px;
+    }
+
+    &:nth-child(2) {
+      width: 21%;
+      border-right: none;
+    }
+
+    &:nth-child(3) {
+      padding-top: 10px;
+
+      width: 23%;
+      height: 90px;
+    }
+
+    &:nth-child(4) {
+      position: relative;
+
+      text-indent: -10000px;
+      width: 8%;
+      height: 90px;
+
+      a:after {
+        position: absolute;
+        top: 35px;
+
+        display: block;
+        width: 19px;
+        height: 19px;
+
+        background: url("../img/sprites-index-page.png") -180px -178px;
+
+        content: "";
+      }
+    }
+
+    &:nth-child(5) {
+      position: relative;
+
+      width: 27%;
+      padding: 0 50px 0 70px;
+      border-right: none;
+
+      a:after {
+        position: absolute;
+        top: 35px;
+        left: 30px;
+
+        display: block;
+        width: 22px;
+        height: 19px;
+
+        background: url("../img/sprites-index-page.png") -132px -126px;
+
+        content: "";
+      }
+    }
+
+    &:nth-child(6) {
+      width: 21%;
+      border-right: none;
+      padding-left: 50px;
+      font-size: 14px;
+      background: #f9f9f9;
+
+      a {
+        padding-top: 25px;
+      }
+    }
+
+    &:nth-child(7) {
+      width: 52%;
+
+      font-size: 14px;
+
+      border-right: none;
+      background: #f9f9f9;
+
+      a {
+        padding-top: 25px;
+      }
+    }
+
+    &:nth-child(8) {
+      width: 27%;
+      height: 90px;
+
+      border-right: none;
+      background: #f9f9f9;
+    }
+  }
+  &__link {
+    display: block;
+    padding: 35px 0;
+
+    text-decoration: none;
+
+    color: black;
+
+    transition: .5s;
+
+    &:hover {
+      color: #8d8d8d;
+      transition: .6s;
+    }
+  }
+
+  &__span {
+    display: block;
+    padding-top: 25px;
+    font-weight: normal;
+    font-size: 14px;
+  }
+
+  &__link--logo {
+    display: block;
+    width: 159px;
+    height: 72px;
+
+    background: url("../img/sprites-index-page.png") -3px -5px;
+  }
+}
+
+.main-navigation-tablet,
+.main-navigation-mobile {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-navigation,
+  .main-navigation-mobile {
+    display: none;
+  }
+
+  .main-navigation-tablet {
+    display: block;
+    height: 180px;
+
+    background: #ffffff;
+
+    &__items {
+      padding: 0;
+      list-style: none;
+    }
+
+    &__item {
+      height: 90px;
+      padding-left: 35px;
+      float: left;
+
+      font-family: "Verdana", "Arial", sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+
+      border-right: 1px solid #ececec;
+      color: #000000;
+
+      &:nth-child(1) {
+        padding: 25px 0 0 50px;
+        width: 47%;
+
+      }
+
+      &:nth-child(2) {
+        width: 10%;
+        text-indent: -10000px;
+        padding-left: 38px;
+
+        a:after {
+          position: absolute;
+          top: 35px;
+
+          display: block;
+          width: 19px;
+          height: 19px;
+
+          background: url("../img/sprites-index-page.png") -180px -178px;
+
+          content: "";
+        }
+      }
+
+      &:nth-child(3) {
+        position: relative;
+
+        width: 43%;
+
+        padding:0  50px 0 120px;
+
+        a:after {
+          position: absolute;
+          top: 35px;
+          left: 60px;
+
+          display: block;
+          width: 22px;
+          height: 19px;
+
+          background: url("../img/sprites-index-page.png") -132px -126px;
+
+          content: "";
+        }
+      }
+      &:nth-child(4) {
+        width: 23.5%;
+        padding: 0 0 0 50px;
+
+        font-size: 14px;
+
+        border-right: none;
+        background: #f9f9f9;
+
+        a {
+          padding-top: 25px;
+        }
+      }
+      &:nth-child(5) {
+        width: 33.5%;
+
+        font-size: 14px;
+
+        border-right: none;
+        background: #f9f9f9;
+
+        a {
+          padding-top: 25px;
+        }
+      }
+      &:nth-child(6) {
+        width: 43%;
+        padding:0  50px 0 120px;
+
+        font-size: 14px;
+
+        border-right: none;
+        background: #f9f9f9;
+      }
+    }
+
+    &__link {
+      display: block;
+      padding: 35px 0;
+
+      text-decoration: none;
+
+      color: #000000;
+
+      transition: .5s;
+
+      &:hover {
+        color: #8d8d8d;
+        transition: .6s;
+      }
+    }
+
+    &__span {
+      display: block;
+      padding-top: 25px;
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    &__link--logo {
+      display: block;
+
+      width: 113px;
+      height: 46px;
+
+      background: url("../img/mishka-logo-tablet.png") center center;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-navigation-tablet {
+    display: none;
+  }
+
+  .main-navigation {
+    display: none;
+  }
+
+  .main-navigation-mobile {
+    display: block;
+
+    &__items {
+      padding: 0;
+    }
+    &__item {
+      height: 80px;
+      background: #ffffff;
+      text-align: center;
+
+      font-family: "Verdana", "Arial", sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+
+      border-bottom: 1px solid #ececec;
+
+      &:nth-child(4) {
+        position: relative;
+
+        &:after {
+          position: absolute;
+          top: 30px;
+          left: 60px;
+
+
+          display: block;
+          width: 19px;
+          height: 19px;
+
+          background: url("../img/sprites-index-page.png") -180px -178px;
+
+          content: "";
+        }
+      }
+
+      &:nth-child(5) {
+        position: relative;
+
+
+        &:after {
+          position: absolute;
+          top: 30px;
+          left: 30px;
+
+          display: block;
+          width: 22px;
+          height: 19px;
+
+          background: url("../img/sprites-index-page.png") -132px -126px;
+
+          content: "";
+        }
+      }
+    }
+
+    &__link {
+      display: block;
+      padding: 30px 0 0 0;
+
+      color: #000000;
+
+      text-decoration: none;
+
+      transition: .5s;
+
+      &:hover {
+        color: #8d8d8d;
+        transition: .6s;
+      }
+    }
+
+    &__link--logo {
+      display: block;
+
+      width: 113px;
+      height: 46px;
+      margin: 0 auto;
+
+      background: url("../img/mishka-logo-mobile.png") no-repeat center center;
+    }
+
+    &__sandwich {
+      position: absolute;
+      right: 20px;
+      top: 425px;
+
+      display: inline-block;
+
+      cursor: pointer;
+    }
+
+    &__sandwich-bar {
+      width: 35px;
+      height: 3px;
+      margin: 6px 0;
+
+      background-color: #000000;
+    }
+
+    &__exit-button {
+      position: absolute;
+      right: 25px;
+      top: 30px;
+
+      display: block;
+      width: 25px;
+      height: 25px;
+
+      &:after,
+      &:before {
+        position: absolute;
+        top: 10px;
+        left: 0;
+
+        width: 25px;
+        height: 2px;
+
+        background: #000000;
+
+        content: "";
+      }
+
+      &:after {
+        transform: rotate(45deg);
+      }
+
+      &:before {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+

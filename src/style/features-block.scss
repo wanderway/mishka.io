@@ -1,0 +1,114 @@
+.features-block {
+  height: 520px;
+  padding: 70px 50px 0;
+
+  background: #ffffff;
+
+  &__wrapper {
+    margin: 0 175px;
+
+  }
+
+  &__title {
+    margin: 0;
+
+    text-align: left;
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  &__feature {
+    position: relative;
+
+    float: left;
+    width: 50%;
+    padding: 60px 20px 0 0;
+
+    font-size: 20px;
+    font-family: "Verdana", "Arial", sans-serif;
+    font-weight: bold;
+
+    &:before {
+      position: absolute;
+      top: 15px;
+      width: 40px;
+      height: 40px;
+
+      background: url("../img/sprites-index-page.png") -5px -178px;
+      content: "";
+    }
+  }
+
+  &__feature--2 {
+
+    &:before {
+      background-position: -48px -178px;
+    }
+  }
+  &__feature--3 {
+
+    &:before {
+      width: 47px;
+      background-position: -215px -45px;
+    }
+  }
+  &__feature--4 {
+
+    &:before {
+      width: 55px;
+      background-position: -164px -116px;
+    }
+  }
+  &__feature--5 {
+
+    &:before {
+      background-position: -136px -178px;
+    }
+  }
+  &__feature--6 {
+
+    &:before {
+
+      background-position: -48px -178px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .features-block {
+
+    &__wrapper {
+      margin: 0;
+    }
+
+    &__title {
+      font-size: 40px;
+    }
+
+    &__feature {
+      padding-right: 0;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .features-block {
+    height: 800px;
+    padding: 30px 30px 0;
+
+    &__wrapper {
+      margin: 0;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__feature {
+      float: none;
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+}
